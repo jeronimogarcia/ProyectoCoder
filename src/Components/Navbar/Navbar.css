@@ -1,0 +1,23 @@
+.nav__Container{
+    display: flex;
+    padding: 0px 30px 0px 0px;
+}
+
+.nav__Container .nav__ul {
+    list-style: none;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px;
+}
+
+.nav__Container .nav__ul li {
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    padding-right: 40px;
+
+}

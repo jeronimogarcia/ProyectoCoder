@@ -1,0 +1,10 @@
+.header__Container{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding: 31px 0px 31px 44px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(45, 16, 49);
+}
