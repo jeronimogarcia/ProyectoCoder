@@ -1,8 +1,11 @@
-import React from 'react'
+import FooterStyle from './FooterStyle'
+import footerImg from '../../Images/Footer-img.svg'
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <FooterStyle>
+      <img id='footer-img' src={footerImg} alt='footer logo' />
+    </FooterStyle>
   )
 }
 
