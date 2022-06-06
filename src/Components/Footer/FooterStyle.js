@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 const FooterStyle = styled.footer`
   height: 147px;
@@ -13,4 +13,4 @@ const FooterStyle = styled.footer`
   }
 `
 
-export default FooterStyle
+export default FooterStyle;

@@ -1,3 +1,4 @@
+import React from 'react';
 import FooterStyle from './FooterStyle'
 import footerImg from '../../Images/Footer-img.svg'
 
@@ -9,4 +10,4 @@ const Footer = () => {
   )
 }
 
-export default Footer
+export default Footer;
