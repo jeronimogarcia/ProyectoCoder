@@ -1,0 +1,57 @@
+.app__Container {
+  background-color: rgba(60, 22, 66, 1);
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+}
+
+.app__Container .app_Radiants {
+  position: absolute;
+  z-index: -1;
+  background-color: rgba(60, 22, 66, 1);
+}
+
+.app__Container .app_Radiants:nth-child(1) {
+  bottom: 200px;
+  left: 0px;
+  background-image:radial-gradient(50% 50%, rgba(29, 211, 176, 0.5), transparent 100%);
+  width: 700px;
+  height: 700px;
+  border-radius: 50%;
+  filter: blur(30px);
+}
+
+.app__Container .app_Radiants:nth-child(2) {
+  bottom: 200px;
+  left: 250px;
+  background-image: radial-gradient(50% 50%, rgba(175, 252,65, 1), transparent 100%);
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  filter: blur(45px);
+}
+
+.app__Container .app_Radiants:nth-child(3) {
+  bottom: 250px;
+  right: 200px;
+  background-image: radial-gradient(
+      50% 50%,
+      rgba(29, 211, 176, 0.5),
+      transparent 500px
+    );
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  filter: blur(100px);
+}
+
+/* .app_Gradient {
+  background-image: radial-gradient(235px 218px at 18% 57%, rgba(175, 252,65), transparent 86%),
+    radial-gradient(336px 325px at 14% 22%, rgba(29, 211, 176, 0.35), transparent 70%),
+    radial-gradient(
+      436px 317px at 85% 38%,
+      rgba(29, 211, 176, 0.4),
+      transparent 500px
+    );
+} */
+

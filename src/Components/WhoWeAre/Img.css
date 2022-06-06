@@ -1,0 +1,12 @@
+.img__Transition{
+    position: relative;
+    right: 525px;
+    transform: translateX(525px);
+    transition: 2s all ease;
+    opacity: 1;
+}
+
+.img__TransitionVisible{
+    transform: translateX(0px);
+    opacity: 0;
+  }

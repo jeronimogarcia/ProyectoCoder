@@ -1,0 +1,28 @@
+.texts__h2 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 77px;
+  text-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+}
+
+.texts__Container {
+  width: 541px;
+  height: 305px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  z-index: 1;
+}
+
+.texts__turquoise {
+  color: #1dd3b0;
+}
+
+.texts__green {
+  color: rgb(175, 252, 65);
+}
+
+.texts__light {
+  color: #b2ff9e;
+}

@@ -1,4 +1,7 @@
 .whoWeAre__Container{
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
+    z-index: 0;
 }
+
