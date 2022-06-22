@@ -3,6 +3,7 @@ import { useContext } from 'react';
 import { MobileContext } from '../../context/mobile'
 import "./Products.css";
 import Card from '../Card/Card'
+import CardMobile from '../CardMobile/CardMobile'
 import podcastImg from '../../Images/cards/podcast.svg'
 import avImg from '../../Images/cards/audioVisuales.svg'
 import avRedesImg from '../../Images/cards/audioVisualesRedes.svg'
@@ -24,6 +25,7 @@ const avRedes = {
 }
 const Products = () => {
   const { IsMobile } = useContext(MobileContext)
+
   return (
     <div className='products__Container'>
       { 
@@ -35,7 +37,16 @@ const Products = () => {
         </>
         )
       }
-      {IsMobile() && <div>Estamos en mobile!!</div>}
+      
+      { 
+        IsMobile() && 
+        (<>
+          <CardMobile {...podcast}/>
+          <CardMobile {...av}/>
+          <CardMobile {...avRedes}/>
+        </>
+        )
+      }
     </div>
     
   )
