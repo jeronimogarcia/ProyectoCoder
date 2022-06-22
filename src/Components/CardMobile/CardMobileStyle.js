@@ -11,7 +11,7 @@ const CardMobileStyled = styled.div`
   perspective: 1000px;
   position: relative;
   
-  &:hover .mcard-inner {
+  /* &:hover .mcard-inner {
     transform: rotateY(180deg);
   }
   &:hover .mcard-inner-front{
@@ -39,21 +39,8 @@ const CardMobileStyled = styled.div`
   
   &:hover .rotate-button{
     transform: rotateZ(-180deg)
-  }
+  } */
   
-  .mcard-inner{
-    height: 100%;
-    width: 100%;
-    border: 1px solid white;
-    border-radius: 35px;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    overflow: hidden;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-  }
   .rotate-button{
     position: absolute;
     bottom: 25px;
@@ -66,29 +53,48 @@ const CardMobileStyled = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 4s ease-in-out;
+  }
+  .rotate-button .rot{
+    transform: rotateZ(-180deg);
   }
   .mcard-inner-front{
-    min-width: 100%;
-    min-height: 100%;
+    min-width: 260px;
+    min-height: 260px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    border: 1px solid white;
+    border-radius: 35px;
   }
   .mcard-card-front-img{
     height: 100px;
     transform: rotateY(0deg);
   }
   .mcard-card-front-title{
-    font-weight: 700;
     font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-top: 10px;
     color: #AFFC41;
   }
   .mcard-inner-back{
-    visibility: hidden;
-    transform: rotateY(180deg);
-    min-height: 260px;
     min-width: 260px;
+    min-height: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid white;
+    border-radius: 35px;
+    padding: 0 20px;
+  }
+  .mcard-inner-back-description{
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+    color: #AFFC41;
   }
 `
 export default CardMobileStyled
