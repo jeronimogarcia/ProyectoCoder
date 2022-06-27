@@ -94,5 +94,12 @@
   filter: blur(200px);
   transform: rotate(-143.43deg);
 }
+.whatsapp{
+  position: fixed;
+  width: 90px;
+  top: 70%;
+  right: 13%;
+  z-index: 1;
+}
 
 
