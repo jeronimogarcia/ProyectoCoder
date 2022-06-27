@@ -104,3 +104,35 @@
 } 
 
 
+@media only screen and (max-width: 480px) {
+  .app__Container .app_Radiants  {
+    display: none;
+  }
+  .fondo{
+    display: none;
+  }
+  .imagen{
+    width: 300px;
+  }
+  .font{
+    font-size: 24px;
+  }
+  .flip-card-front.font{  
+    position: relative;
+    bottom: 29px;
+    left: 48px;
+  }
+  .flip-card-back.font{
+    position: relative;
+    bottom: 49px;
+    left: 48px;
+
+  }
+  .flip-card-front2.font{
+    position: relative;
+    left: -77px;
+  }
+  .products__Container{
+    align-items: center;
+  }
+}
