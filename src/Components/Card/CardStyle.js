@@ -2,37 +2,30 @@ import styled from "styled-components"
 
 export const rightVariant = {
   alignSelf: 'end',
-  unhoverContainer: {
-    gridColumn: '2/3',
-  },
-  hoverContainer: {
-    gridColumn: '1/2',
-  }
+  flexDirection: 'row-reverse'
 }
 
 const CardStyled = styled.div`
-  display:grid;
-  grid-template-columns: 400px 376px;
-  grid-template-rows: 400px;
-  border-radius: 35px;
-  justify-items: center;
+  display: flex;
   align-items: center;
+  height: 400px;
   width: 400px;
   overflow: hidden;
   background: rgba(218, 218, 218, 0.3);
+  border-radius: 35px;
   transition: all 0.4s ease-in-out;
   align-self: ${props  => props?.variant?.alignSelf};
+  flex-direction: ${props => props?.variant?.flexDirection};
 
   &:hover{
-    width: 776px;
+    width: 800px;
   }
-  &:hover .unhover-container{ grid-column: ${props  => props?.variant?.unhoverContainer?.gridColumn}; }
-  &:hover .hover-container{ grid-column: ${props  => props?.variant?.hoverContainer?.gridColumn}; }
+  /* &:hover .unhover-container{ visibility: visible; min-width: 400px; }
+  &:hover .hover-container{ visibility: visible; min-width: 400px;} */
   .unhover-container{
-    grid-column: 1/2;
-    /* grid-column: ${ props => props?.variant?.unhoverContainer?.gridColumn}; */
-    grid-row: 1/2;
+    order: ${ props => props?.variant?.unhoverContainer?.order};
     display: flex;
+    min-width: 400px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -70,11 +63,10 @@ const CardStyled = styled.div`
     color: #AFFC41;
     padding: 0 42px;
     text-align: center;
+    min-width: 400px;
   }
   .hover-container{
-    grid-column: '2/3';
-    /* grid-column: ${ props => props?.variant?.unhoverContainer?.gridColumn}; */
-    grid-row: 1/2;
+    order: ${ props => props?.variant?.hoverContainer?.order};
     display: flex;
     flex-direction: column;
     justify-content: center;
