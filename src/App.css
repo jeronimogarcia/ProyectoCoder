@@ -1,6 +1,6 @@
 .app__Container {
   background-color: rgba(0, 0, 0, 1);
-  position: absolute;
+  position: static;  /* absolute to fixed */
   width: 100%;
   z-index: 0;
   overflow: hidden;
