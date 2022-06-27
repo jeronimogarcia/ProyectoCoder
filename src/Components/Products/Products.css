@@ -1,8 +1,8 @@
 .products__Container{
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    align-items: start;
+    justify-content: flex-start;
+    align-items: flex-start;
     justify-content: center;
     row-gap: 90px;
     padding: 0 20%;
