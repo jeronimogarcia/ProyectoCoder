@@ -1,0 +1,14 @@
+.container{
+    padding-top: 30px;
+}
+
+.fondo{
+    position: absolute;
+    left: 0;
+}
+
+.imagen{
+    position: absolute;
+    left: 150px;
+    top: 300px;
+}

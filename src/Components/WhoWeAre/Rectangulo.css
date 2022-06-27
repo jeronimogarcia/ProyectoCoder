@@ -1,0 +1,7 @@
+.rectangulo{
+    position: relative;
+    left: 333px;
+    bottom: 85px;
+    z-index: -1;
+    width: 535px;
+}

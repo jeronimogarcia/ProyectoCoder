@@ -1,17 +1,15 @@
-import React from 'react';
-import "./Navbar.css"
+import React from "react";
+import MobileNavigation from "./MobileNavigation";
+import Navigation from "./Navigation";
+import styles from "./NavBar.module.css";
 
 const Navbar = () => {
   return (
-    <nav className='nav__Container'>
-      <ul className='nav__ul'>
-        <li>Inicio</li>
-        <li>¿Que hacemos?</li>
-        <li>Productos</li>
-      </ul>
-      
-    </nav>
-  )
-}
+    <div className={styles.NavBar}>
+      <Navigation />
+      <MobileNavigation />
+    </div>
+  );
+};
 
-export default Navbar
+export default Navbar;

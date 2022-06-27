@@ -11,6 +11,11 @@ function App() {
       <div className="app_Radiants"></div>
       <div className="app_Radiants"></div>
       <div className="app_Radiants"></div>
+      <div className="app_Radiants"></div>
+      <div className="app_Radiants"></div>
+      <div className="app_Radiants"></div>
+      <div className="app_Radiants"></div>
+      <div className="app_Radiants"></div>
       <Header></Header>
       <Title></Title>
       <WhoWeAre></WhoWeAre>

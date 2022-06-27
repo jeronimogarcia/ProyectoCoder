@@ -1,28 +1,25 @@
 .texts__h2 {
+  margin-bottom: 30px;
   font-style: normal;
   font-weight: 900;
   font-size: 64px;
   line-height: 77px;
-  text-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(180deg, #1dd3b0 0%, #affc41 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .texts__Container {
-  width: 541px;
-  height: 305px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  z-index: 1;
+  width: 650px;
+  height: 450px;
+}
+.texts__Container p {
+  color: white;
+  font-size: 20px;
+  line-height: 24.2px;
+  font-weight: 800;
 }
 
-.texts__turquoise {
-  color: #1dd3b0;
-}
 
-.texts__green {
-  color: rgb(175, 252, 65);
-}
 
-.texts__light {
-  color: #b2ff9e;
-}

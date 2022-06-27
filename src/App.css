@@ -1,57 +1,98 @@
 .app__Container {
-  background-color: rgba(60, 22, 66, 1);
+  background-color: rgba(0, 0, 0, 1);
   position: absolute;
   width: 100%;
   z-index: 0;
+  overflow: hidden;
 }
 
 .app__Container .app_Radiants {
   position: absolute;
   z-index: -1;
   background-color: rgba(60, 22, 66, 1);
+ 
 }
 
 .app__Container .app_Radiants:nth-child(1) {
-  bottom: 200px;
-  left: 0px;
-  background-image:radial-gradient(50% 50%, rgba(29, 211, 176, 0.5), transparent 100%);
+  top: -10%;
+  left: 30%;
+  background-image: #3C1642;
   width: 700px;
   height: 700px;
-  border-radius: 50%;
-  filter: blur(30px);
-}
-
-.app__Container .app_Radiants:nth-child(2) {
-  bottom: 200px;
-  left: 250px;
-  background-image: radial-gradient(50% 50%, rgba(175, 252,65, 1), transparent 100%);
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  filter: blur(45px);
-}
-
-.app__Container .app_Radiants:nth-child(3) {
-  bottom: 250px;
-  right: 200px;
-  background-image: radial-gradient(
-      50% 50%,
-      rgba(29, 211, 176, 0.5),
-      transparent 500px
-    );
-  width: 400px;
-  height: 400px;
-  border-radius: 50%;
+  border-radius: 100%;
   filter: blur(100px);
 }
 
-/* .app_Gradient {
-  background-image: radial-gradient(235px 218px at 18% 57%, rgba(175, 252,65), transparent 86%),
-    radial-gradient(336px 325px at 14% 22%, rgba(29, 211, 176, 0.35), transparent 70%),
-    radial-gradient(
-      436px 317px at 85% 38%,
-      rgba(29, 211, 176, 0.4),
-      transparent 500px
-    );
-} */
+.app__Container .app_Radiants:nth-child(2) {
+  top: 15%;
+  left: 90%;
+  background: #1DD3B0;
+  width: 300px;
+  height: 310px;
+  border-radius: 100%;
+  filter: blur(150px);
+}
+
+.app__Container .app_Radiants:nth-child(3) {
+  top: 9%;
+  right: 85%;
+  background: linear-gradient(180deg, #A0FF18 0%, #3C1642 100%);
+  width: 506px;
+  height: 413px;
+  border-radius: 100%;
+  filter: blur(150px);
+}
+
+.app__Container .app_Radiants:nth-child(4) {
+  top: 42%;
+  right: 90%;
+  background: #1DD3B0;
+  width: 270px;
+  height: 283px;
+  border-radius: 100%;
+  filter: blur(150px);
+}
+
+.app__Container .app_Radiants:nth-child(5) {
+  top: 46%;
+  right: 3.5%;
+  background: #3C1642;
+  width: 700px;
+  height: 705px;
+  border-radius: 100%;
+  filter: blur(150px);
+}
+
+.app__Container .app_Radiants:nth-child(6) {
+  top: 35%;
+  right: 3.5%;
+  background: rgba(160, 255, 24, 0.15);
+  width: 360px;
+  height: 360px;
+  border-radius: 100%;
+  filter: blur(150px);
+}
+
+.app__Container .app_Radiants:nth-child(7) {
+  bottom: 12%;
+  right: 75%;
+  background: linear-gradient(180deg, #A0FF18 0%, #3C1642 100%);
+  width: 726px;
+  height: 694px;
+  border-radius: 100%;
+  filter: blur(180px);
+  transform: rotate(-136.38deg);
+}
+
+.app__Container .app_Radiants:nth-child(8) {
+  bottom: -10%;
+  left: 50%;
+  background: linear-gradient(180deg, #3C1642 56.25%, #1DD3B0 100%);
+  width: 1084px;
+  height: 1281px;
+  border-radius: 100%;
+  filter: blur(200px);
+  transform: rotate(-143.43deg);
+}
+
 

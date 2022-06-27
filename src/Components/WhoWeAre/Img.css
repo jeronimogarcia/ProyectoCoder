@@ -1,12 +1,8 @@
-.img__Transition{
-    position: relative;
-    right: 525px;
-    transform: translateX(525px);
-    transition: 2s all ease;
-    opacity: 1;
+.imgLady{
+position: absolute;
+width: 700px;
+height: 702px;
+top: 220px;
+right: 0px;
+opacity: 0.75;
 }
-
-.img__TransitionVisible{
-    transform: translateX(0px);
-    opacity: 0;
-  }
