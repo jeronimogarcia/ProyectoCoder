@@ -27,7 +27,7 @@ const Products = () => {
   const { IsMobile } = useContext(MobileContext)
 
   return (
-    <div className='products__Container'>
+    <div className='products__Container' id='products'>
       { 
         !IsMobile() && 
         (<>

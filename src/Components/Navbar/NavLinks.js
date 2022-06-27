@@ -13,7 +13,7 @@ const NavLinks = (props) => {
         transition={{delay:0.05}}
         onClick={() => props.isMobile && props.closeMobileMenu()}
       >
-        <a href="/">Inicio </a>
+        <a href="./#">Inicio </a>
       </motion.li>
       <motion.li
         initial={animateForm}
@@ -21,7 +21,7 @@ const NavLinks = (props) => {
         transition={{delay:0.2}}
         onClick={() => props.isMobile && props.closeMobileMenu()}
       >
-        <a href="#quienesSomos">¿Que hacemos?</a>
+        <a href="./#quienesSomos">¿Que hacemos?</a>
       </motion.li>
       <motion.li
         initial={animateForm}
@@ -29,7 +29,7 @@ const NavLinks = (props) => {
         transition={{delay:0.35}}
         onClick={() => props.isMobile && props.closeMobileMenu()}
       >
-        <a href="/">Productos</a>
+        <a href="./#products">Productos</a>
       </motion.li>
     </ul>
   );
