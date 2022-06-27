@@ -2,7 +2,7 @@ import CardMobileStyled from './CardMobileStyle'
 import imgBtn from '../../Images/cards/imgBtn.svg'
 import ReactCardFlip from 'react-card-flip';
 import { useState } from 'react';
-
+import { motion, AnimatePresence  } from 'framer-motion';
 const CardMobile = ({img, title, description}) => {
   const [isFlipped, setIsTouched] = useState(false)
   const handleClick = (e) => {
@@ -16,35 +16,32 @@ const CardMobile = ({img, title, description}) => {
         <div className={`mcard-inner-front`}>
           <img className="mcard-card-front-img" src={img} alt={title}/>
           <h3 className='mcard-card-front-title'>{title}</h3>
-          {/* <button className='rotate-button' onClick={handleClick}>
-            <img className='rotate-button-img' src={imgBtn} alt='rotate to see more' />
-          </button> */}
         </div>
 
         <div className={`mcard-inner-back`}>
           <h4 className='mcard-inner-back-description'>{description}</h4>
         </div>
       </ReactCardFlip>
-      
-      <button className='rotate-button' onClick={handleClick}>
-            <img className='rotate-button-img rot' src={imgBtn} alt='rotate to see more' />
-      </button>
+      <AnimatePresence>
+      {!isFlipped && 
+      <motion.button className='rotate-button' onClick={handleClick}
+        transition={{ type: "tween", duration: 0.5}} 
+      >
+          <img className='rotate-button-img' src={imgBtn} alt='rotate to see more' />
+      </motion.button>}
+        
+      {isFlipped && 
+      <motion.button className='rotate-button' onClick={handleClick}  
+        animate={{rotate: -180 }} 
+        initial={{rotate: 0}} 
+        transition={{ type: "tween", duration: 0.5}} 
+      >
+          <img className='rotate-button-img' src={imgBtn} alt='rotate to see more' />
+      </motion.button>
 
+      }
+      </AnimatePresence>
 
-
-
-      {/* <div className={`mcard-inner`}>
-        <div className={`mcard-inner-front`}>
-          <img className="mcard-card-front-img" src={img} alt={title}/>
-          <h3 className='mcard-card-front-title'>{title}</h3>
-        </div>
-        <div className={`mcard-inner-back`}>
-          <h4 className='mcard-inner-back-description'>{description}</h4>
-        </div>
-      </div>
-      <button className='rotate-button' >
-        <img className='rotate-button-img' src={imgBtn} alt='rotate to see more' />
-      </button> */}
     </CardMobileStyled>
   )
 }

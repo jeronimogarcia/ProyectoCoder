@@ -1,6 +1,7 @@
 import styled from "styled-components"
+import { motion } from 'framer-motion'
 
-const CardMobileStyled = styled.div`
+const CardMobileStyled = styled(motion.div)`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,11 +50,9 @@ const CardMobileStyled = styled.div`
     height: 36px;
     border: 2px solid #AFFC41;
     border-radius: 10px;
-    transition: transform 0.3s;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all 4s ease-in-out;
   }
   .rotate-button .rot{
     transform: rotateZ(-180deg);
@@ -97,4 +96,5 @@ const CardMobileStyled = styled.div`
     color: #AFFC41;
   }
 `
+
 export default CardMobileStyled
