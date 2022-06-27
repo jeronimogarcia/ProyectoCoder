@@ -16,19 +16,20 @@ const CardMobile = ({img, title, description}) => {
         <div className={`mcard-inner-front`}>
           <img className="mcard-card-front-img" src={img} alt={title}/>
           <h3 className='mcard-card-front-title'>{title}</h3>
-          {/* <button className='rotate-button' onClick={handleClick}>
+          <button className='rotate-button' onClick={handleClick}>
             <img className='rotate-button-img' src={imgBtn} alt='rotate to see more' />
-          </button> */}
+          </button>
         </div>
 
         <div className={`mcard-inner-back`}>
           <h4 className='mcard-inner-back-description'>{description}</h4>
+          <button className='rotate-button' onClick={handleClick}>
+            <img className='rotate-button-img rot' src={imgBtn} alt='rotate to see more' />
+          </button>
         </div>
       </ReactCardFlip>
       
-      <button className='rotate-button' onClick={handleClick}>
-            <img className='rotate-button-img rot' src={imgBtn} alt='rotate to see more' />
-      </button>
+     
 
 
 
