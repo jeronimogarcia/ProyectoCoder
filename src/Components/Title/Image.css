@@ -5,10 +5,12 @@
 .fondo{
     position: absolute;
     left: 0;
+    width: 750px;
 }
 
 .imagen{
     position: absolute;
     left: 150px;
     top: 300px;
+    width: 500px;
 }

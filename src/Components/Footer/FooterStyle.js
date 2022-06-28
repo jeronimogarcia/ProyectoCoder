@@ -24,6 +24,25 @@ const FooterStyle = styled.footer`
     font-size: 24px;
     font-weight: 700;
   }
+  @media only screen and (max-width: 480px) {
+    height: 80px;
+
+    #footer-img{
+    height: 40px;
+    width: 100px;
+    margin-left: 1.5rem;
+    }
+    .info-container >{
+    font-size: 13px;
+    font-weight: 700;
+    }
+    .info-container{
+      margin-right: 1.5rem;
+    }
+    .info-email,.info-phone{
+      margin: 0.3rem;
+    }
+  }
 `
 
 export default FooterStyle;
