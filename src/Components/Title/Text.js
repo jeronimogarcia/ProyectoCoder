@@ -1,29 +1,38 @@
 import React from "react";
-import "./Text.css";
+import styles from "./Title.module.css";
 
 const Text = () => {
   return (
-      <div className="TxtContainer">
-        <span className="font">Somos</span>
-        <div className="flip-card">
-          <div className="flip-card-inner">
-            <span className="flip-card-front font">profesionales</span>
-            <span className="flip-card-back font">fanáticos</span>
+    <div className={styles.TitleContainer}>
+      <div className={styles.UpContainer}>
+        <span className={styles.Font}>Somos</span>
+        <div className={styles.FlipCard}>
+          <div className={styles.FlipInner}>
+            <span className={`${styles.UpFlipCardFront} ${styles.Font}`}>
+              profesionales
+            </span>
+            <span className={`${styles.UpFlipCardBack} ${styles.Font}`}>
+              fanáticos
+            </span>
           </div>
         </div>
-        <div className="flip-card2">
-          <div className="flip-card-inner2">
-            <span className="flip-card-front2 font">en</span>
-            <span className="flip-card-back2 font">de</span>
+      </div>
+      <div className={styles.BottomContainer}>
+        <div className={styles.FlipCard}>
+          <div className={styles.FlipInner}>
+            <span className={`${styles.BottomFlipCardFront} ${styles.Font}`}>
+              en
+            </span>
+            <span className={`${styles.BottomFlipCardBack} ${styles.Font}`}>
+              de
+            </span>
           </div>
         </div>
         <div>
-          <span className="font">
-          lo que hacemos
-          </span>
-          </div>
+          <span className={styles.Font}>lo que hacemos</span>
+        </div>
       </div>
-    
+    </div>
   );
 };
 

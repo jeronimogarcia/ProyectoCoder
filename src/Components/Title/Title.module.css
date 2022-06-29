@@ -1,0 +1,164 @@
+/* Title */
+
+.MainContainer {
+  position: relative;
+  top: 114px;
+  display: flex;
+  flex-direction: row-reverse;
+  height: 1000px;
+}
+
+/* Text */
+
+.TitleContainer {
+  right: 15%;
+  position: relative;
+  top: 18%;
+}
+
+.TitleContainer span {
+    color: white;
+  }
+
+.Font{
+    font-weight: 600;
+    font-size: 64px;
+}
+
+
+.TitleContainer .UpContainer {
+  position: relative;
+  right: 94px;
+}
+
+.FlipCard {
+  position: absolute;
+  left: 40px;
+  background-color: transparent;
+  width: 110px;
+  height: 80px;
+  perspective: 1000px;
+}
+
+.FlipInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.TitleContainer .UpContainer .FlipCard .FlipInner .UpFlipCardFront,
+.UpFlipCardBack {
+  position: absolute;
+  width: 100%;
+  left: 185px;
+  height: 100%;
+  bottom: 77px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.TitleContainer .UpContainer .FlipCard .FlipInner .UpFlipCardFront{
+  position: absolute;
+    color: white;
+    transform: rotateX(-180deg);
+    animation: mymoveback 3s;
+    animation-iteration-count: 1;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+.TitleContainer .UpContainer .FlipCard .FlipInner .UpFlipCardBack{
+  position: absolute;
+  left: 185px;
+  display: block;
+  box-sizing: border-box;
+  padding: 0px;
+  text-align: center;
+  animation: mymove 3s;
+  animation-iteration-count: 1;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
+/* */
+
+.TitleContainer .BottomContainer{
+}
+
+.TitleContainer .BottomContainer .FlipCard .FlipInner .BottomFlipCardFront,
+.BottomFlipCardBack {
+    position: absolute;
+    width: 100%;
+    left: 20px;
+    height: 100%;
+    bottom: 20px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.TitleContainer .BottomContainer .FlipCard .FlipInner .BottomFlipCardFront{
+    position: absolute;
+    left: -150px;
+    top: 0;
+    color: white;
+    transform: rotateX(-180deg);
+    animation: mymoveback 3s;
+    animation-iteration-count: 1;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+.TitleContainer .BottomContainer .FlipCard .FlipInner .BottomFlipCardBack {
+    position: absolute;
+    left: -150px;
+    top: 0;
+    display: block;
+    box-sizing: border-box;
+    padding: 0px;
+    text-align: center;
+    animation: mymove 3s;
+    animation-iteration-count: 1;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+/* Keyframes */
+
+@keyframes mymove {
+    0% {
+      transform: rotateX(0deg);
+    }
+    100% {
+      transform: rotateX(180deg);
+    }
+  }
+  @keyframes mymoveback {
+    0% {
+      transform: rotateX(-180deg);
+    }
+    100% {
+      transform: rotateX(0deg);
+    }
+  }
+
+/* Image */
+
+.ImgContainer{
+    padding-top: 30px;
+}
+
+.Fondo{
+    position: absolute;
+    left: 0;
+    width: 750px;
+}
+
+.Image{
+    position: absolute;
+    left: 150px;
+    top: 300px;
+    width: 500px;
+}

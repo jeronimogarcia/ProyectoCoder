@@ -1,6 +1,6 @@
 .app__Container {
   background-color: rgba(0, 0, 0, 1);
-  position: static;  /* absolute to fixed */
+  position: relative;  /* absolute to fixed */
   width: 100%;
   z-index: 0;
   overflow: hidden;
@@ -80,18 +80,18 @@
   width: 726px;
   height: 694px;
   border-radius: 100%;
-  filter: blur(180px);
+  filter: blur(300px);
   transform: rotate(-136.38deg);
 }
 
 .app__Container .app_Radiants:nth-child(8) {
-  bottom: -10%;
-  left: 50%;
+  bottom: 4%;
+  left: 70%;
   background: linear-gradient(180deg, #3C1642 56.25%, #1DD3B0 100%);
-  width: 1084px;
-  height: 1281px;
+  width: 700px;
+  height: 700px;
   border-radius: 100%;
-  filter: blur(200px);
+  filter: blur(150px);
   transform: rotate(-143.43deg);
 }
 

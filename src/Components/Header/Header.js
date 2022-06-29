@@ -1,11 +1,11 @@
 import React from 'react';
 import Logo from "../Logo/Logo";
 import Navbar from '../Navbar/Navbar';
-import "./Header.css";
+import styles from './Header.module.css';
 
 const Header = () => {
   return (
-    <div className='header__Container'>
+    <div className={styles.header}>
       <Logo></Logo>
       <Navbar></Navbar>
     </div>
