@@ -30,10 +30,10 @@ const FooterStyle = styled.footer`
   @media only screen and (max-width: 480px) {
     height: 80px;
 
-    #footer-img{
-    height: 40px;
-    width: 100px;
+    #footer-img{ 
     margin-left: 1.5rem;
+    display: flex;
+    height: 100%;
     }
     .info-container >{
     font-size: 13px;
@@ -41,6 +41,8 @@ const FooterStyle = styled.footer`
     }
     .info-container{
       margin-right: 1.5rem;
+      height: 100%;
+      justify-content: start;
     }
     .info-email,.info-phone{
       margin: 0.3rem;

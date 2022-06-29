@@ -136,4 +136,15 @@
     
     align-items: center;
   }
+  .whatsapp{
+    position: fixed;
+    width: 50px;
+    right: 13%;
+    z-index: 1;
+    bottom: 20%;
+    top: auto;
+  } 
+  #footer-img img{
+    height: 50px;
+  }
 }

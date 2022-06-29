@@ -13,3 +13,21 @@
     display: flex;
     flex-direction: row;
 }
+@media only screen and (max-width: 480px) {
+    .whoWeAre__Container{
+        width: 80vw;
+        padding: 0 10%;
+        height: 430px;
+    }
+    .texts__h2{
+        font-size: 30px;
+    }
+    .texts__Container {
+        width: auto; 
+        height: auto;
+    }
+    .texts__Container p{
+        font-size: 12px;
+    }
+
+}
