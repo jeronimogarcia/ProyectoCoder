@@ -6,6 +6,9 @@ const FooterStyle = styled.footer`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  z-index: 99;
+
 
   #footer-img{
     height: 58px;
