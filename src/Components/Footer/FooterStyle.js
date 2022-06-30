@@ -14,6 +14,10 @@ const FooterStyle = styled.footer`
     height: 58px;
     width: 150px;
     margin-left: 5rem;
+    display: flex;
+  }
+  #footer-img img{
+    height: 70px;
   }
   .info-container{
     display:flex;
@@ -34,6 +38,7 @@ const FooterStyle = styled.footer`
     margin-left: 1.5rem;
     display: flex;
     height: 100%;
+    align-items: center;
     }
     .info-container >{
     font-size: 13px;
@@ -42,10 +47,15 @@ const FooterStyle = styled.footer`
     .info-container{
       margin-right: 1.5rem;
       height: 100%;
-      justify-content: start;
+      justify-content: center;
     }
     .info-email,.info-phone{
       margin: 0.3rem;
+      font-size: 13px;
+      font-weight: 700;
+    }
+    #footer-img img{
+    height: 38px;
     }
   }
 `
