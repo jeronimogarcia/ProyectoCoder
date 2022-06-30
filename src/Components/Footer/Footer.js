@@ -9,7 +9,7 @@ const Footer = () => {
       {/* <img id='footer-img' src={footerImg} alt='footer logo' /> */}
       <div className="info-container">
         <p className="info-email">podcastraiz@gmail.com</p>
-        <p className="info-phone">+54 9 11 6464 5254</p>
+        <p className="info-phone">+54 9 11 6464 5256</p>
       </div>
     </FooterStyle>
   )
