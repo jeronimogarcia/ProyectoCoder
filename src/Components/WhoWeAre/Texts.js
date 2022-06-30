@@ -7,8 +7,8 @@ const Texts = () => {
       <h2 id='quienesSomos'>¿Que hacemos?</h2>
       <div className={styles.Texts}>
         <p>Creamos y producimos contenidos audiovisuales especialmente para redes sociales.</p>
-        <p>Trabajamos en el desarollo de piezas y proyectos audiovisuales junto a equipos de comunicacion institucional.</p>
-        <p>Acompañamos el desarrollo de proyectos e ideas de organizaciones para sus medios de comunicación de manera integral.</p>
+        <p>Trabajamos en el desarollo de piezas y proyectos audiovisuales junto a equipos de comunicación institucional.</p>
+        <p>Acompañamos el desarrollo de proyectos e ideas de organizaciones para sus mgitedios de comunicación de manera integral.</p>
       </div>
     </div>
   );
