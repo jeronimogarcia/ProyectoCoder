@@ -6,11 +6,9 @@ const useMobile = () => {
   useEffect(() => {
     const updateMobile = () =>{
       if(  document.body.clientWidth < 480 ) {
-        console.log("Mobile");
         setIsMobile(true)
       }
       else {
-        console.log("Desktop");
         setIsMobile(false)
       }
     }
