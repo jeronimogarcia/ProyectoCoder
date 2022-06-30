@@ -1,0 +1,156 @@
+.MainContainer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  height: 600px;
+}
+
+.TextMain {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.TxtContainer {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.TxtContainer h2 {
+  margin-bottom: 30px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 77px;
+  background: linear-gradient(180deg, #1dd3b0 0%, #affc41 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.Texts {
+  width: 650px;
+  height: 450px;
+}
+
+.Texts p {
+  color: white;
+  font-size: 20px;
+  line-height: 24.2px;
+  font-weight: 800;
+}
+
+/* Rectangulo */
+
+.Rectangulo {
+  position: absolute;
+  z-index: -1;
+  width: 535px;
+  bottom: 14%;
+  left: 6%;
+}
+
+/* Lady Img */
+
+.ImgContainer {
+  position: inherit;
+}
+
+.ImgLady {
+  position: absolute;
+  top: 49%;
+  left: 64%;
+  opacity: 0.7;
+  width: 35vw;
+  max-width: 600px;
+}
+
+@media only screen and (max-width: 1250px){
+  .TextMain {
+    display: block;
+  }
+  .TxtContainer {
+    position: relative;
+    bottom: 5%;
+    left: 19%;
+  }
+  .ImgLady {
+    top: 49%;
+    left: 72%;
+  }
+  
+}
+
+@media only screen and (max-width: 990px){
+    .MainContainer {
+        height: 350px;
+      }
+      .Rectangulo {
+        display: none;
+      }
+    
+      .Texts {
+        width: auto;
+      }
+      .TxtContainer {
+        position: static;
+        padding: 0% 13% 0% 13%;
+      }
+    
+      .TxtContainer h2 {
+        font-size: 38px;
+        margin-bottom: 0px;
+      }
+    
+      .Texts p {
+        font-size: 18px;
+        line-height: 18px;
+        margin-top: 0px;
+      }
+    
+      .ImgLady {
+        position: absolute;
+        top: 64%;
+        left: 78%;
+        opacity: 0.7;
+        width: 35vw;
+        max-width: 600px;
+      }
+}
+
+@media only screen and (max-width: 480px) {
+  .MainContainer {
+    height: 350px;
+  }
+  .Rectangulo {
+    display: none;
+  }
+
+  .Texts {
+    width: auto;
+  }
+  .TxtContainer {
+    padding: 0% 13% 0% 13%;
+  }
+
+  .TxtContainer h2 {
+    font-size: 30px;
+    margin-bottom: 0px;
+  }
+
+  .Texts p {
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 0px;
+  }
+
+  .ImgLady {
+    position: absolute;
+    top: 64%;
+    left: 78%;
+    opacity: 0.7;
+    width: 35vw;
+    max-width: 600px;
+  }
+}

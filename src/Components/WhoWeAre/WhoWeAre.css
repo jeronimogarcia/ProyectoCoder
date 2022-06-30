@@ -1,15 +1,10 @@
 .whoWeAre__Container{
-    position: relative;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
     height: 600px;
-    z-index: 0;
 }
 
 .whoWeAre__Container .whoWeAre__textRecContainer {
-    position: absolute;
-    left: -370px;
     display: flex;
     flex-direction: row;
 }

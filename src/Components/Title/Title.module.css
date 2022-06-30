@@ -168,6 +168,10 @@
 }
 
 @media (max-width: 1250px) {
+  .MainContainer {
+    height: 800px;
+  }
+
   .TitleContainer {
     top: 16%;
     left: 8%;
@@ -216,6 +220,7 @@
 @media (max-width: 990px) {
   .MainContainer {
     padding-top: 90px;
+    height: 1000px;
   }
   .TitleMainContainer {
     width: auto;
@@ -237,7 +242,7 @@
     position: static;
     left: 0%;
     top: 0%;
-    width: 60vw;
+    width: 550px;
     max-width: 550px;
   }
   .Font {
@@ -264,10 +269,20 @@
 }
 
 @media (max-width: 600px) {
+  .MainContainer {
+    height: 640px;
+    padding-top: 75px;
+  }
   .TitleContainer {
     position: relative;
     top: 15%;
     left: 16%;
+  }
+  .ImgContainer {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding-top: 75px;
   }
   .Font {
     font-size: 24px;
@@ -276,8 +291,7 @@
     position: relative;
     left: 31px;
    }
-  
-   
+
    .UpFlipCardBack {
     bottom: 29px;
     left: 47px;
@@ -297,5 +311,8 @@
   }
   .FlipCard {
      height: 40px;
+  }
+  .Image {
+    width: 320px;
   }
 }

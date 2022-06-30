@@ -3,15 +3,17 @@ import Img from "./Img";
 import Texts from "./Texts";
 import Rectangulo from "./Rectangulo";
 import "./WhoWeAre.css";
+import styles from "./WhoWeAre.module.css";
+
 const WhoWeAre = () => {
   return (
-    <div className="whoWeAre__Container" >
-      <div className="whoWeAre__textRecContainer">
+    <div className={styles.MainContainer}>
+      <div className={styles.TextMain}>
         <Rectangulo></Rectangulo>
         <Texts></Texts>
-      </div>
-      <div>
-        <Img></Img>
+        <div className={styles.ImgContainer}>
+          <Img></Img>
+        </div>
       </div>
     </div>
   );

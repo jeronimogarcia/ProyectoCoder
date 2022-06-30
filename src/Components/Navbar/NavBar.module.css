@@ -28,7 +28,8 @@
 }
 
 .NavBar a:hover {
-    border-bottom: 1px solid yellow;
+    border-bottom: 1px solid #1DD3B0;
+    color: #1DD3B0;
 }
 
 .NavBar .MobileNavigation{
