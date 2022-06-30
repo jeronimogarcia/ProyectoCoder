@@ -14,7 +14,7 @@ function App() {
       <div className="app__Container">
         <Gradients></Gradients>
         <a
-          href="https://wa.me/+5491164645254?text=Buen%20d%C3%ADa%2C%0AEstoy%20interesado%20en%20los%20servicios%20de%20Ra%C3%ADz"
+          href="https://wa.me/+5491164645256?text=Buen%20d%C3%ADa%2C%0AEstoy%20interesado%20en%20los%20servicios%20de%20Ra%C3%ADz"
           target="_blank"
           rel="noreferrer"
         >
