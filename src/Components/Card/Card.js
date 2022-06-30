@@ -7,7 +7,7 @@ const Card = ({img, title, description,right}) => {
       <div className="unhover-container">
         <img className="card-img" src={img} alt="podcast" />
         <h3 className="card-title">{title}</h3>
-        <h6 className="card-info">Mas info</h6>
+        <h6 className="card-info">Más info</h6>
       </div>
       
       <div className="hover-container">
