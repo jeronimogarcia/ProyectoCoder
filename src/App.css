@@ -9,8 +9,8 @@
 .whatsapp{
   position: fixed;
   width: 90px;
-  top: 590px;
-  right: 13%;
+  top: 65%;
+  right: 5%;
   z-index: 1;
 } 
 
@@ -50,9 +50,9 @@
   .whatsapp{
     position: fixed;
     width: 50px;
-    right: 10%;
+    right: 4%;
     z-index: 1;
-    bottom: 20%;
+    bottom: 12%;
     top: auto;
   } 
   #footer-img img{
