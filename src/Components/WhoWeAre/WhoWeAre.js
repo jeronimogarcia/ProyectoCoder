@@ -2,7 +2,6 @@ import React from "react";
 import Img from "./Img";
 import Texts from "./Texts";
 import Rectangulo from "./Rectangulo";
-import "./WhoWeAre.css";
 import styles from "./WhoWeAre.module.css";
 
 const WhoWeAre = () => {
