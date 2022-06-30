@@ -5,28 +5,32 @@
   top: 114px;
   display: flex;
   flex-direction: row-reverse;
+  padding-top: 30px;
   height: 1000px;
 }
 
 /* Text */
 
+.TitleMainContainer {
+  width: 50%;
+}
+
 .TitleContainer {
-  right: 15%;
   position: relative;
-  top: 18%;
+  top: 15%;
+  left: 8%;
 }
 
 .TitleContainer span {
-    color: white;
-  }
-
-.Font{
-    font-weight: 600;
-    font-size: 64px;
+  color: white;
 }
 
+.Font {
+  font-weight: 600;
+  font-size: 64px;
+}
 
-.TitleContainer .UpContainer {
+.UpContainer {
   position: relative;
   right: 94px;
 }
@@ -49,7 +53,7 @@
   transform-style: preserve-3d;
 }
 
-.TitleContainer .UpContainer .FlipCard .FlipInner .UpFlipCardFront,
+.UpFlipCardFront,
 .UpFlipCardBack {
   position: absolute;
   width: 100%;
@@ -60,17 +64,17 @@
   backface-visibility: hidden;
 }
 
-.TitleContainer .UpContainer .FlipCard .FlipInner .UpFlipCardFront{
+.UpFlipCardFront {
   position: absolute;
-    color: white;
-    transform: rotateX(-180deg);
-    animation: mymoveback 3s;
-    animation-iteration-count: 1;
-    animation-delay: 3s;
-    animation-fill-mode: forwards;
+  color: white;
+  transform: rotateX(-180deg);
+  animation: mymoveback 3s;
+  animation-iteration-count: 1;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
 }
 
-.TitleContainer .UpContainer .FlipCard .FlipInner .UpFlipCardBack{
+.UpFlipCardBack {
   position: absolute;
   left: 185px;
   display: block;
@@ -85,80 +89,213 @@
 
 /* */
 
-.TitleContainer .BottomContainer{
-}
-
-.TitleContainer .BottomContainer .FlipCard .FlipInner .BottomFlipCardFront,
+.BottomFlipCardFront,
 .BottomFlipCardBack {
-    position: absolute;
-    width: 100%;
-    left: 20px;
-    height: 100%;
-    bottom: 20px;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
+  position: absolute;
+  width: 100%;
+  left: 20px;
+  height: 100%;
+  bottom: 20px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
-.TitleContainer .BottomContainer .FlipCard .FlipInner .BottomFlipCardFront{
-    position: absolute;
-    left: -150px;
-    top: 0;
-    color: white;
-    transform: rotateX(-180deg);
-    animation: mymoveback 3s;
-    animation-iteration-count: 1;
-    animation-delay: 3s;
-    animation-fill-mode: forwards;
+.BottomFlipCardFront {
+  position: absolute;
+  left: -150px;
+  top: 0;
+  color: white;
+  transform: rotateX(-180deg);
+  animation: mymoveback 3s;
+  animation-iteration-count: 1;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
 }
 
-.TitleContainer .BottomContainer .FlipCard .FlipInner .BottomFlipCardBack {
-    position: absolute;
-    left: -150px;
-    top: 0;
-    display: block;
-    box-sizing: border-box;
-    padding: 0px;
-    text-align: center;
-    animation: mymove 3s;
-    animation-iteration-count: 1;
-    animation-delay: 3s;
-    animation-fill-mode: forwards;
+.BottomFlipCardBack {
+  position: absolute;
+  left: -150px;
+  top: 0;
+  display: block;
+  box-sizing: border-box;
+  padding: 0px;
+  text-align: center;
+  animation: mymove 3s;
+  animation-iteration-count: 1;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
 }
 
 /* Keyframes */
 
 @keyframes mymove {
-    0% {
-      transform: rotateX(0deg);
-    }
-    100% {
-      transform: rotateX(180deg);
-    }
+  0% {
+    transform: rotateX(0deg);
   }
-  @keyframes mymoveback {
-    0% {
-      transform: rotateX(-180deg);
-    }
-    100% {
-      transform: rotateX(0deg);
-    }
+  100% {
+    transform: rotateX(180deg);
   }
+}
+@keyframes mymoveback {
+  0% {
+    transform: rotateX(-180deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}
 
 /* Image */
 
-.ImgContainer{
-    padding-top: 30px;
+.ImgContainer {
+  width: 50%;
 }
 
-.Fondo{
-    position: absolute;
-    left: 0;
-    width: 750px;
+.Fondo {
+  position: absolute;
+  left: 0;
+  /* width: 750px; */
+  width: 40vw;
+  max-width: 750px;
 }
 
-.Image{
+.Image {
+  position: absolute;
+  left: 4%;
+  top: 18%;
+  width: 31vw;
+  max-width: 550px;
+}
+
+@media (max-width: 1250px) {
+  .TitleContainer {
+    top: 16%;
+    left: 8%;
+  }
+
+  .TitleMainContainer {
+   position: relative;
+   left: 31px;
+  }
+ 
+  
+  .UpFlipCardBack {
+    bottom: 59px;
+    left: 132px;
+  }
+
+  .UpFlipCardFront {
+    bottom: 59px;
+    left: 132px;
+  }
+  .BottomFlipCardFront,
+  .BottomFlipCardBack {
+    left: -161px;
+  }
+  .Font {
+    font-size: 48px;
+  }
+
+  .BottomText {
+    position: relative;
+    right: 25px;
+    top: 1px;
+  }
+  .Image {
     position: absolute;
-    left: 150px;
-    top: 300px;
-    width: 500px;
+    left: 4%;
+    top: 18%;
+    width: 31vw;
+    max-width: 550px;
+  }
+  .FlipCard {
+    height: 60px;
+ }
+}
+
+@media (max-width: 990px) {
+  .MainContainer {
+    padding-top: 90px;
+  }
+  .TitleMainContainer {
+    width: auto;
+  }
+  .Fondo {
+    display: none;
+  }
+  .MainContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .ImgContainer {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding-top: 150px;
+  }
+  .Image {
+    position: static;
+    left: 0%;
+    top: 0%;
+    width: 60vw;
+    max-width: 550px;
+  }
+  .Font {
+    font-size: 38px;
+  }
+  .UpFlipCardBack {
+    bottom: 46px;
+    left: 98px;
+  }
+
+  .UpFlipCardFront {
+    bottom: 46px;
+    left: 98px;
+  }
+  .BottomFlipCardFront,
+  .BottomFlipCardBack {
+    left: -166px;
+  }
+  .BottomText {
+    position: relative;
+    right: 39px;
+    top: 1px;
+  }
+}
+
+@media (max-width: 600px) {
+  .TitleContainer {
+    position: relative;
+    top: 15%;
+    left: 16%;
+  }
+  .Font {
+    font-size: 24px;
+  }
+  .TitleMainContainer {
+    position: relative;
+    left: 31px;
+   }
+  
+   
+   .UpFlipCardBack {
+    bottom: 29px;
+    left: 47px;
+   }
+ 
+   .UpFlipCardFront {
+    bottom: 30px;
+    left: 47px;
+   }
+   .BottomFlipCardFront,
+   .BottomFlipCardBack {
+     left: -175px;
+   }
+   
+  .BottomText {
+    right: 58px;
+  }
+  .FlipCard {
+     height: 40px;
+  }
 }
